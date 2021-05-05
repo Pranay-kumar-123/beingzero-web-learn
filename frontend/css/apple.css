@@ -1,0 +1,36 @@
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 43%;
+    transform: translatex(-50%);
+}
+.navbar-nav.navbar-cente {
+    position: absolute;
+    left: 60%;
+    transform: translatex(-50%);
+}
+.hd
+{
+    position: absolute;
+    left: 19%;
+    font-size: 20px;
+    transform: translatex(-50%);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar-custom {
+    background-color: rgb(0, 0, 0);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgb(255, 255, 255);
+}
+
+.btn
+{
+    border-radius: 30px;
+    width: 100px;
+    background-color: rgb(27, 103, 245);
+    color:azure ;
+}
