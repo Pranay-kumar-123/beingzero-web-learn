@@ -9,6 +9,9 @@ app.get("/", function(req, res){
 app.get("/resume", function(req, res){
     res.sendFile(__dirname + "/frontend/html/resume.html");
 })
+app.get("/color", function(req, res){
+    res.sendFile(__dirname + "/frontend/html/color.html");
+})
 app.get("/google", function(req, res){
     res.sendFile(__dirname + "/frontend/html/google.html");
 })

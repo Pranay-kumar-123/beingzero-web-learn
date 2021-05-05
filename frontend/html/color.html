@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/color.css">
+</head>
+<body>
+    <div class="pk" ">
+      <div id="slideAmount" style="height: 100px;width: 50%;vertical-align: 80px;background-color: rgb(255, 255, 255);border-radius: 60px;"class="d-flex align-items-center justify-content-center" >change the sliders to view the color</div>
+       <br>
+      <div class="slidecontainer">
+          red  :
+        <input id="1" type="range" min="1" max="225" value="50" onchange="updateSlider()">
+        <br>
+        green :
+        <input id="2" type="range" min="1" max="225" value="50" onchange="updateSlider()">
+        <br>
+        blue:
+        <input id="3" type="range" min="1" max="225" value="50" onchange="updateSlider()">
+      </div>
+      </div>
+      <script src="/js/color.js"></script>
+</body>
+</html>
