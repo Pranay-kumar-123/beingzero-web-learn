@@ -19,9 +19,20 @@
             <span style='color: red;font-size: 70px;'>e</span>
           </p>
           <div class="fontuser">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          <input type="search" placeholder="Search Google or type a URL "/>
+          <input id="form" type="search" placeholder="Enter form to redirect to form page"/>
+          <button onclick="myFunction()" style="color:rgb(255, 255, 255) ; background-color: black;height: 1cm;width: 2cm;">Search</button>
           </div>
     </div>
+    <script>
+     function myFunction()
+      {
+       var i=document.getElementById("form").value;
+       console.log(i);
+       if(i=="form")
+       {
+        window.location = "/form";
+       }
+      }
+    </script>
 </body>
 </html>
