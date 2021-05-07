@@ -19,10 +19,16 @@
             <span style='color: red;font-size: 70px;'>e</span>
           </p>
           <div class="fontuser">
-          <input id="form" type="search" placeholder="Enter form to redirect to form page"/>
+          <input id="form" type="search" placeholder="search any of the given assignments"/>
           <button onclick="myFunction()" style="color:rgb(255, 255, 255) ; background-color: black;height: 1cm;width: 2cm;">Search</button>
           </div>
     </div>
+    <ul>
+      <li>color</li>
+    <li>form</li>
+  <li>apple</li>
+  <li>resume</li>
+</ul>
     <script>
      function myFunction()
       {
@@ -31,6 +37,18 @@
        if(i=="form")
        {
         window.location = "/form";
+       }
+       if(i=="color")
+       {
+        window.location = "/color";
+       }
+       if(i=="apple")
+       {
+        window.location = "/apple";
+       }
+       if(i=="resume")
+       {
+        window.location = "/resume";
        }
       }
     </script>
