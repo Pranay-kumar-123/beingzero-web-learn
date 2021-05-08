@@ -3,16 +3,14 @@ const express = require('express');
 const app = express();
 app.use(express.static("frontend"));
 
-app.get("/", function(req, res){
-    res.send("Welcome to My Basic Site");
-})
+
 app.get("/resume", function(req, res){
     res.sendFile(__dirname + "/frontend/html/resume.html");
 })
 app.get("/color", function(req, res){
     res.sendFile(__dirname + "/frontend/html/color.html");
 })
-app.get("/google", function(req, res){
+app.get("/", function(req, res){
     res.sendFile(__dirname + "/frontend/html/google.html");
 })
 app.get("/apple", function(req, res){
@@ -26,6 +24,9 @@ app.get("/succes", function(req, res){
 })
 app.get("/login", function(req, res){
     res.sendFile(__dirname + "/frontend/html/login.html");
+})
+app.get("/chart", function(req, res){
+    res.sendFile(__dirname + "/frontend/html/chart.html");
 })
 // Heroku will automatically set an environment variable called PORT
 const PORT = process.env.PORT || 4000;
