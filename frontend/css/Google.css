@@ -5,6 +5,7 @@
 }
 input[type=search] {
     width: 35%;
+    border: none;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 40px;
@@ -17,6 +18,9 @@ input[type=search] {
   }
   input[type=search]:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+  input[type=search]:focus{
+    outline: none;
   }
   .fontuser {
     position: relative;
