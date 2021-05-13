@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/todo.css">
+    <link rel="stylesheet" href="/css/resume.css">
+   
+
+    
+</head>
+
+<body style="background-color: rgb(173, 171, 171);">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <div class="login-box" style="background-color: blanchedalmond; padding-left: 10%; padding-right: 10%;">
+        <br>
+        <h1>To-Do-List</h1>
+        <br>
+        <button id="butn" onclick="completed()" style="float:left; background-color: rgb(88, 248, 66); ">view completed tasks</button>
+        <button  id="butn" onclick="myfunction()" style="float:right; background-color: rgb(110, 233, 53);  ">view all</button>
+        <br>
+        <br>
+       <form>
+          <div class="user-box">
+            <input style="width: 70%; border-radius: 30px; border: none; height: 1cm;"  id="box" type="text" name="" placeholder="  Add any work to get noted">
+            <button id="butn" onclick="myfunction()" type="button" style=" background-color: rgb(252, 33, 5);border-color: none;">add</button>
+         <div id="mytable"></div>
+        </form>
+        <br>
+    </div>
+    
+    <script src="/js/todo.js"></script>
+</body>
+</html>
