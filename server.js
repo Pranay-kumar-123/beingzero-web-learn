@@ -73,6 +73,56 @@ mongoose.connection.on('connected',function(){
 //         data: itemdata
 //     })
 // })
+var sesnschema =new mongoose.Schema({
+    username : String,
+    email : String,
+    password : String,
+    isDeleted : {type:Boolean,default:false}
+    
+    
+    });
+    
+    
+var sesn = mongoose.model('sesn' , sesnschema);
+
+app.post('/api/register', function(req,res){
+    sesn.find({email : req.body.email }, function (err, data) {
+        if(err){ res.status(400).json({msg:"Failed"}); }
+        else {//console.log(data);
+              if(data.length>0)
+              res.status(200).json({msg:"Saved Successful", result : data});
+              else
+              { 
+                
+                var add= new sesn(req.body);
+                add.save(function(err,record) {
+                if(err){
+                    res.redirect("/register");
+                }
+                else {
+                    res.redirect("/login");
+                   }
+                });
+              }
+             }
+    });
+})
+app.post('/api/login', function(req,res){
+    console.log(req.body);
+    sesn.find(req.body , function (err, data) {
+        console.log(err,data);
+        if(err){ res.status(400).json({msg:"Failed"}); }
+        else if(data.length==1)
+        {
+            console.log(req.body);
+            res.json({msg:"success", data:data[0]});
+             }
+             else{
+
+                 res.redirect("/login");
+             }
+    });
+})
 var path = require('path');
 app.get('/:page', function(req, res){
     var ext = path.extname(req.params.page);
